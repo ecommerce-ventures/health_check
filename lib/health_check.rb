@@ -86,7 +86,7 @@ module HealthCheck
   mattr_accessor :redis_password
   self.redis_password = 'some-password'
 
-  # Include the error in the response body. 
+  # Include the error in the response body.
   # You should only do this where your /health_check endpoint is NOT open to the public internet
   mattr_accessor :include_error_in_response_body
   self.include_error_in_response_body = false
@@ -124,7 +124,6 @@ require 'health_check/redis_health_check'
 require 'health_check/elasticsearch_health_check'
 require 'health_check/sidekiq_health_check'
 require 'health_check/utils'
-require 'health_check/health_check_controller'
 require 'health_check/health_check_routes'
 require 'health_check/middleware_health_check'
 require 'health_check/rabbitmq_health_check'
